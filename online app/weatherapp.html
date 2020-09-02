@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="..//images/Pelfusion-Long-Shadow-Media-Cloud.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+    <link rel="stylesheet" href="..//css/Frame.css">
+    
+    <link rel="stylesheet" href="style2.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <nav>
+        <div class="page-icon"></div>
+        <ul class="links">
+            <li><a class="contact" href="..//index.html">Home</a></li>
+            <li><a  class="contacts" href="https://drive.google.com/file/d/1n5Yf_8uK_1-tje7TX7regFtk4hKYwSv5/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download app</a></li>
+        </ul>
+        <form action="" id="search-form">
+                        <span id="loader"></span>
+                       <input type="text" id="search-input" class="searchTerm" placeholder="Enter a city">
+                       <button type="submit" class="search-btn" id="click"><i class="fa fa-search" aria-hidden="true"></i></button>
+                       <div class="warning"></div>
+            </form>
+           <ul class="world-icon">
+               <li><i class="fa fa-globe" aria-hidden="true"></i></li>
+               <li id="country"></li>
+               <li id="temperature-scale">°C</li>
+            </ul>
+    </nav>
+    
+
+    <section class="weather-info">
+        <div class="container-fluid" style=" background:linear-gradient(rgba(18, 22, 22, 0.5),rgba(24, 18, 24, 0.5));">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="left-info-wrap">
+                        <h4 id="mobile-message">Download App for the best Mobile experience
+                             </h4>
+                        <div class="location-wrap text-center">
+                            <br>
+                            <div class="location"><img src="images2/gps.png" alt="" width="26px"> <span id="location-name"></span></div>
+                            <br>
+                            <div class="population"><img src="images2/man.png" alt="" width="58px"> <span id="population"></span></div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="cloud-temperature-wrap">
+                            <div class="container-fluid">
+                                <div class="row">
+                                        <div class="col-md-6">
+                                                <div class="temperature-space">
+                                                    <p class="current text-center">Current weather</p>
+                                                    <br>
+                                                    <div class="" id="temperature"></div>
+                                                    <p id="feels-like"></p>
+                                                </div>
+                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="cloud-space">
+                                            <div id="cloud-icon"></div>                                           
+                                            <div class="cloud-conclusion" id="clouds"></div>
+                                            <div id="uv"></div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="right-info-wrap">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-md-4">
+                                    <div class="weather-conditions-wrap">
+                                            <ul>
+                                                <br>
+                                                <li>Wind speed<img src="images2/wind-512.png" alt="" width="70px"> <span id="wind"></span></li>
+                                                <br>
+                                                <br>
+                                                <li>Humidity<img src="images2/drop-512.png" alt="" width="70px"><span id="humidity"></span></li>
+                                                <br>
+                                                <br>
+                                                <li>Pressure <span style="opacity: 0;">.....</span> <img src="images2/pressure.png" alt="" width="50px"> <span id="pressure"></span></li>
+                                               <br>
+                                               <br>
+                                                <li><img src="images2/mist-512.png" alt="" width="70px"><span id="visibility"></span></li>
+                                            </ul>
+                                        </div>
+                               </div>      
+                               <div class="col-md-7">
+                                    <div class="container">
+                                            <div class="row">
+                                                <div id="logo-wrap"> <a href="https://pixabay.com"><img src="images2/logo_square.png" width="50px" alt=""></a></div>
+                                                <div class="col-md-12">
+                                                    
+                                                     <div id="video-wrap">           
+                                                         </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                     <div id="video-wrap1">
+                                                          </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                     <div id="video-wrap2">
+                                                        
+                                                         </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                              </div>    
+                               </div>
+                                    
+                                    
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </section>
+    <section id="further-info">
+        <div class="container text-center">
+            <div class="row">
+               
+                <div class="col-md-3">
+                        <div class="day-wrap">
+                           <div id="weather-icon1"></div> 
+                         
+                           <div class="time-stamp1"><span id="timestamp1"></span></div>
+                           <div id="description1"></div>
+                        </div>
+                        </div>
+                        
+               <div class="col-md-3">
+                    <div class="day-wrap">
+                            <div id="weather-icon2"></div> 
+                           
+                            <div class="time-stamp2"><span id="timestamp2"></span></div>
+                            <div id="description2"></div>
+                         </div>
+                       
+               </div>
+               <div class="col-md-3">
+                    <div class="day-wrap">
+                            <div id="weather-icon3"></div> 
+                         
+                            <div class="time-stamp3"><span id="timestamp3"></span></div>
+                            <div id="description3"></div>
+                         </div>
+                       
+               </div>
+               <div class="col-md-3">
+                    <div class="day-wrap">
+                            <div id="weather-icon4"></div> 
+                          
+                            <div class="time-stamp4"><span id="timestamp4"></span></div>
+                            <div id="description4"></div>
+                         </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js" type="module"></script>
+   
+    <script src="../config.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+*{margin: 0; padding: 0; list-style: none;
+  -webkit-tap-highlight-color: green;  text-decoration: none;scroll-behavior: smooth;}#head{   height: 100vh;width: 100%!important;
+}#navbars{ display: flex; margin-top: 7vh;z-index:9!important;align-items: center;justify-content: space-around!important;
+}
+body{
+    background: linear-gradient(white,#f4f2f5);
+    background-size:120% 100%;
+    background-repeat:no-repeat;
+    height: 90vh;
+    background-image:radial-gradient(at top left,rgba(179, 85, 200, 0.2) 0%,rgba(76, 236, 199, 0.3) 67%, transparent 67.5%);
+}
+
+.company-logo a{
+    margin-left: 1vh;
+    color: #cf40a4;
+    font-size: 4vh;
+    font-weight: 500;
+    text-decoration: none;
+}
+    .nav-links{
+        display: flex;
+        justify-content: space-around!important;
+        width: 30%;
+        align-items: center;
+        margin-top: 1vh;
+    }
+  
+    .nav-links li a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.9vh;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-links li a:hover{
+        color:#cf40a4;
+    }
+    .contact{
+        border: 1px solid #cf40a4;
+        border-radius: 50px;
+        color: #cf40a4 !important;
+        padding:10px 15px;
+        transition: all 0.5s ease-in-out;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .contact:hover{
+ background-color: #cf40a4 !important;
+   color: white!important;
+}
+     
+.nav-links-mobile{
+        display: none;}
+        @media only screen and (max-width:1024px) {
+            .nav-links{
+                width: 60%;
+            }
+          
+           
+        }
+        @media only screen and (max-width: 800px) {
+            body{
+               overflow-x: hidden;
+            }
+            #navbars{
+                height: 5vh!important;
+                Z-index:10;
+            }
+            .company-logo {
+                margin-right: auto!important;
+                font-size: 3vh!important;
+               } 
+             .stick{
+                 height: 5vh!important;
+                 background-color: white!important;
+                 box-shadow: 1px black!important;
+                 z-index:10000000000000000000000!important;
+             }
+             .company-logo a{   
+                font-size: 3vh!important;
+               }             
+             .line1{
+                 width: 20px;
+                 height: 2px;
+                 background-color: black;
+                 margin: 5px;        
+                 transition:all 0.8s ease-in-out;
+             }
+             .line2{
+                 width: 25px;
+                 height: 2px;
+                 background-color: black;
+                 margin: 5px;      
+                 transition:all 0.8s ease-in-out;  
+             }
+             .line3{
+                 width: 28px;
+                 height: 2px;
+                 background-color: black;
+                 margin: 5px;        
+                 transition:all 0.8s ease-in-out;
+             }
+             .toggle .line1{
+                transform:rotate(-130deg) translate(-10px,3px);
+                width:28px;
+             }
+             .social-media{
+              margin-top: 35vh;
+                font-size: 3.6vh!important;
+            }
+             .toggle .line2{
+               opacity: 0;
+             }
+             .toggle .line3{
+                transform:rotate(130deg) translate(-13px,1px);
+                width:28px;
+             }
+             .change-color .line1{
+                background: black;
+             }
+             .change-color .line2{
+                background: black;
+             }
+             .change-color .line3{
+                background: black;
+             }
+             .navbar-change{
+                 color:black!important;
+             }
+              .hamburger{
+                 position: absolute;
+                 cursor:pointer;
+                 position: fixed;
+                 z-index: 1000000;
+                 right: 5%;
+                 top: 5%;
+                 transform: translate(-5%, -1%);
+                 z-index:200;
+                 transition:all 1s ease-in-out;
+             }
+             .sticky-hamburger{
+                 top: 30%;
+                 z-index:100!important;
+             
+             }
+            .nav-links{
+                display: none;
+                flex-direction: column;
+            }
+            .fancy2{
+                display: none;
+            }
+            .nav-links-mobile{
+                height: 95vh!important;
+                position: absolute!important;
+                z-index: 100;
+                margin-left: 40%!important;
+                width: 60%;
+                top: 11vh;
+                position: fixed!important;
+                background-color: black;
+               display:flex;
+               background-color:rgba(188, 38, 199, 0.6);
+               flex-direction: column;
+               justify-content: space-around!important;
+               transform: translateX(100%)!important;
+               transition: all 0.5s ease-in-out;
+            }
+            .icon-wrapper{
+                margin-top:2vh;
+                margin-left: 2vh;
+                
+               }
+            .icon-wrapper{
+                margin-top:2vh!important;
+                margin-left: 2vh;
+                
+               }
+
+               .phone{
+                   width: 60%;
+                   margin-top: 1vh;
+               }
+           
+            .nav-links-mobile li a{
+              color: white;
+              font-family: 'Raleway', sans-serif;
+              font-size: 3vh;
+            }
+            .nav-active{
+             transform: translateX(0%)!important;
+            }
+            .andriod-app-mobile{
+                margin-top: 3vh;
+                display: block!important;
+
+            }
+            .andriod-app{
+                display: none;
+            }
+            .cont:hover{
+             text-decoration: none;
+             color: white;
+             background-color:rgba(10, 134, 187);
+             border-color:rgb(10, 134, 187)
+         }
+         /*@keyframes navFadeMobile {
+                 from{
+                     opacity: 0;
+                     transform: translateX(50px);
+                 }   
+                 to{
+                     opacity:1;
+                     transform: translateX(0px;)
+                 }
+            }*/
+            .service-wrapper{
+             box-shadow: 0 0 0px rgba(0,0,0,0.2);
+            }
+            .app-info-mobile{
+                font-size: 1.5vh!important;
+            }
+
+         }
+.info{
+    margin-top: 20vh;
+    background: url(..//images/prismatic-abstract-line-art-no-background.svg) no-repeat;
+    background-position-x: right;
+    background-size: 40vh;
+
+}
+h2{
+    color: rgba(0, 0, 0, 0.7); font-weight: 600}.app{color: #db099c; }.des{font-size: 2.6vh}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-color:rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    color:white!important;
+    padding:10px 15px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: white 
+}
+.showme{
+    background-image:radial-gradient(at top left,rgba(184, 14, 214, 0.4) 3%,rgba(13, 22, 192, 0.4) 67%, transparent 67.5%);
+    background-size:120% 100%;
+    background-repeat:no-repeat;
+    height: 2vh;
+}
+.icon-wrapper{
+ margin-top:26vh;
+ margin-left: 6vh;
+ 
+}
+.andriod-app-mobile{
+    display: none;
+}
+.fancy{
+    border-radius:30% 70% 45% 55% / 19% 40% 60% 81%;
+    background: linear-gradient(rgba(218, 37, 218,0.5),rgba(82, 28, 199,0.9));
+    height: 4vh;
+    position: absolute;
+    color: rgba(0,0,0,0.0);
+    margin-top: 10vh;
+}
+.fancy2{
+    border-radius:30% 70% 45% 55% / 19% 40% 60% 81%;
+    background: linear-gradient(rgba(37, 179, 218, 0.8),rgba(82, 28, 199,0.6));
+    height: 4vh;
+    position: absolute;
+    overflow: hidden;
+    color: rgba(0,0,0,0.0);
+   top:30px;
+   right: -200px;
+   
+}
+
+footer{
+    
+    background-size: 100%;
+    align-items: center;
+    background-color: #0052CC;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    color:white;
+    font-size: 5vh;
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    font-size: 5vh;
+    margin-left: 25%;
+    color: black!important
+}
+.social-media li a{
+    color:rgba(0, 0, 0, 0.8);
+    
+}
+.social-media li a:hover{
+    color:rgba(0, 0, 0, 0.9);
+
+}
